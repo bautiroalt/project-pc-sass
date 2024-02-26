@@ -1,0 +1,42 @@
+.my-navbar {
+  color: #6b705c;
+  padding-top: $space3;
+  padding-bottom: $space3;
+  margin-top: $space6;
+  margin-bottom: $space6;
+  font-size: xx-large;
+  background-color: #ccd5ae;
+
+  @include md-max {
+    color: #6b705c;
+    padding-top: $space3;
+    padding-bottom: $space3;
+    margin-top: 0;
+    margin-bottom: $space6;
+    font-size: xx-large;
+    background-color: #ccd5ae;
+  }
+
+  .my-link {
+    position: relative;
+    text-decoration: none;
+    color: #6b705c;
+    font-size: 1rem;
+    padding: 0 $space2;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #6b705c;
+      width: 0;
+      height: 0.2rem;
+      left: 0;
+      bottom: 0.05rem;
+      transition: 0.3s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

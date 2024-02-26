@@ -1,0 +1,223 @@
+body {
+  background-color: #faedcd;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+.my-navbar {
+  color: #6b705c;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: xx-large;
+  background-color: #ccd5ae;
+}
+@media (max-width: 991px) {
+  .my-navbar {
+    color: #6b705c;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    font-size: xx-large;
+    background-color: #ccd5ae;
+  }
+}
+.my-navbar .my-link {
+  position: relative;
+  text-decoration: none;
+  color: #6b705c;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+.my-navbar .my-link::after {
+  content: "";
+  position: absolute;
+  background-color: #6b705c;
+  width: 0;
+  height: 0.2rem;
+  left: 0;
+  bottom: 0.05rem;
+  transition: 0.3s;
+}
+.my-navbar .my-link:hover::after {
+  width: 100%;
+}
+
+.card {
+  background-color: #fefae0;
+  border: solid 0.2rem #ccd5ae;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 992px) {
+  .card .card-mobile {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .card .bt-pc {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .card .card-pc {
+    display: none;
+  }
+}
+.card .card-img {
+  height: auto;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.my-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.my-card-body .card-text {
+  flex: 1;
+}
+
+.btn.btn-primary.my-button {
+  background-color: #ccd5ae;
+  border: solid transparent;
+  border-radius: 0.5rem;
+}
+.btn.btn-primary.my-button.my-button:hover {
+  background-color: #c9cba3;
+}
+
+.accordion-button {
+  background-color: #ccd5ae;
+}
+.accordion-button:not(.collapsed).my-accordion {
+  color: black;
+  background-color: #ccd5ae;
+  box-shadow: none;
+}
+.accordion-button:focus.my-accordion {
+  border: none;
+  z-index: none;
+  box-shadow: none;
+}
+
+.contacto h1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contacto .contacto-l {
+  text-decoration: none;
+  list-style: none;
+}
+.contacto .contacto-l li {
+  gap: 1rem;
+  font-size: x-large;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  word-break: break-all;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (max-width: 991px) {
+  .contacto .contacto-l li li {
+    font-size: large;
+  }
+}
+.contacto .contacto-l li a {
+  text-decoration: underline;
+  color: black;
+}
+@media (max-width: 991px) {
+  .contacto .contacto-l li a a {
+    font-size: large;
+  }
+  .contacto .contacto-l li a.bt-pc {
+    display: none;
+  }
+}
+.contacto .contacto-f input,
+.contacto .contacto-f textarea {
+  border: solid transparent;
+  margin: 0 0 1rem 0;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #ccd5ae;
+}
+.contacto .contacto-f input textarea,
+.contacto .contacto-f textarea textarea {
+  resize: none;
+}
+.contacto .contacto-f input [type=submit]:focus-visible,
+.contacto .contacto-f textarea [type=submit]:focus-visible {
+  border: solid 2px black;
+}
+
+footer > div {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.links {
+  list-style: none;
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.links a {
+  text-decoration: none;
+  color: #6b705c;
+  font-size: x-large;
+}
+.links a:hover {
+  font-size: xx-large;
+  transition: 0.2s;
+}
+
+.f-links {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.f-links a {
+  color: #6b705c;
+  display: block;
+}
+.f-links i {
+  font-size: x-large;
+  margin: 0.5rem;
+}
+.f-links i:hover {
+  font-size: xx-large;
+  transition: 0.2s;
+}
+
+@media (min-width: 992px) {
+  .desktop-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .mobile-hidden {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

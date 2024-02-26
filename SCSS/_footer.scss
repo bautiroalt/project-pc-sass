@@ -1,0 +1,53 @@
+footer {
+  & > div {
+    margin: $space10 0;
+    text-align: center;
+  }
+}
+
+.links {
+  list-style: none;
+  margin-top: $space5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: $space6;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  a {
+    text-decoration: none;
+    color: #6b705c;
+    font-size: x-large;
+
+    &:hover {
+      font-size: xx-large;
+      transition: 0.2s;
+    }
+  }
+}
+
+.f-links {
+  margin-top: $space5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: $space6;
+  gap: $space2;
+  flex-wrap: wrap;
+
+  a {
+    color: #6b705c;
+    display: block;
+  }
+
+  i {
+    font-size: x-large;
+    margin: $space1;
+
+    &:hover {
+      font-size: xx-large;
+      transition: 0.2s;
+    }
+  }
+}

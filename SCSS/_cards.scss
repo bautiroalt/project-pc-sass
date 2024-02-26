@@ -1,0 +1,40 @@
+.card {
+  background-color: #fefae0;
+  border: solid 0.2rem #ccd5ae;
+  border-radius: $space2;
+  margin-bottom: $space3;
+
+  @include md-min {
+    .card-mobile {
+      display: none;
+    }
+  }
+
+  .bt-pc {
+    @include md-max {
+      display: none;
+    }
+  }
+
+  .card-pc {
+    @include md-max {
+      display: none;
+    }
+  }
+
+  .card-img {
+    height: auto;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+  }
+}
+
+.my-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .card-text {
+    flex: 1;
+  }
+}

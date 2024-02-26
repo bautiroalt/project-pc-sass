@@ -1,0 +1,9 @@
+.btn.btn-primary.my-button {
+  background-color: #ccd5ae;
+  border: solid transparent;
+  border-radius: $space1;
+
+  &.my-button:hover {
+    background-color: #c9cba3;
+  }
+}

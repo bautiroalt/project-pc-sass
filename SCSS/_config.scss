@@ -1,0 +1,35 @@
+$space0: 0rem;
+$space1: 0.5rem;
+$space2: 1rem;
+$space3: 1.5rem;
+$space4: 2rem;
+$space5: 2.5rem;
+$space6: 3rem;
+$space7: 3.5rem;
+$space8: 4rem;
+$space9: 4.5rem;
+$space10: 5rem;
+$space11: 5.5rem;
+$space12: 6rem;
+$space13: 6.5rem;
+$space14: 7rem;
+$space15: 7.5rem;
+$space16: 8rem;
+$space17: 8.5rem;
+$space18: 9rem;
+$space19: 9.5rem;
+$space20: 10rem;
+
+@mixin md-min {
+  // <992px
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin md-max {
+  // >992px
+  @media (max-width: 991px) {
+    @content;
+  }
+}

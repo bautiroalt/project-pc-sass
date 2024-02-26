@@ -1,0 +1,15 @@
+.accordion-button {
+  background-color: #ccd5ae;
+
+  &:not(.collapsed).my-accordion {
+    color: black;
+    background-color: #ccd5ae;
+    box-shadow: none;
+  }
+
+  &:focus.my-accordion {
+    border: none;
+    z-index: none;
+    box-shadow: none;
+  }
+}

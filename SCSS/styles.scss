@@ -1,0 +1,28 @@
+body {
+  background-color: #faedcd;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+@import "config";
+@import "navbar";
+@import "cards";
+@import "buttons";
+@import "accordion";
+@import "contact";
+@import "footer";
+
+.desktop-hidden {
+  @include md-min {
+    display: none;
+  }
+}
+
+.mobile-hidden {
+  @include md-max {
+    display: none;
+  }
+}

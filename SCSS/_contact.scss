@@ -1,0 +1,65 @@
+.contacto {
+  h1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacto-l {
+    text-decoration: none;
+    list-style: none;
+
+    li {
+      gap: 1rem;
+      font-size: x-large;
+      margin: $space1;
+      padding: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      word-break: break-all;
+      align-items: center;
+      justify-content: flex-start;
+
+      @include md-max {
+        li {
+          font-size: large;
+        }
+      }
+
+      a {
+        text-decoration: underline;
+        color: black;
+
+        @include md-max {
+          a {
+            font-size: large;
+          }
+          &.bt-pc {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .contacto-f {
+    input,
+    textarea {
+      border: solid transparent;
+      margin: 0 0 1rem 0;
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      background-color: #ccd5ae;
+
+      textarea {
+        resize: none;
+      }
+
+      [type="submit"]:focus-visible {
+        border: solid 2px black;
+      }
+    }
+  }
+}
